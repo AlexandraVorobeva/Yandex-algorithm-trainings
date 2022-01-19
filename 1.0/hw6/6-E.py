@@ -1,0 +1,12 @@
+a = int(input())
+b = int(input())
+c = int(input())
+
+l, r = 0, 2 * a + b
+while l < r:
+    m = (l + r) // 2
+    if 2 * (2 * a + 3 * b + 4 * c + 5 * m) >= 7 * (a + b + c + m):
+        r = m
+    else:
+        l = m + 1
+print(l)
